@@ -1,0 +1,43 @@
+@import 'tailwindcss';
+
+:root {
+	--foreground-rgb: 255, 255, 255;
+	--background-start-rgb: 15, 23, 42;
+	--background-end-rgb: 15, 23, 42;
+}
+
+body {
+	background: #000;
+	color: #fff;
+	overflow-x: hidden;
+}
+
+/* Эффект контурного текста */
+.outline-text {
+	color: transparent;
+	-webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+}
+
+/* Плавный скролл всей страницы */
+html {
+	scroll-behavior: smooth;
+}
+
+/* Убираем зазоры при рендеринге */
+* {
+	box-sizing: border-box;
+}
+
+/* Кастомный скроллбар (опционально) */
+::-webkit-scrollbar {
+	width: 5px;
+}
+::-webkit-scrollbar-track {
+	background: #000;
+}
+::-webkit-scrollbar-thumb {
+	background: #333;
+}
+::-webkit-scrollbar-thumb:hover {
+	background: #ff5e00;
+}
